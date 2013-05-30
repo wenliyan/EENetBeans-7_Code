@@ -21,11 +21,11 @@
             programming languages:</p>
         <ul>
             <%
-                        String[] selectedLanguages =
-                                request.getParameterValues("progLang");
-                        if (selectedLanguages != null) {
-                            for (int i = 0; i < selectedLanguages.length;
-                                    i++) {
+                String[] selectedLanguages =
+                        request.getParameterValues("progLang");
+                if (selectedLanguages != null) {
+                    for (int i = 0; i < selectedLanguages.length;
+                            i++) {
             %>
 
             <li>
@@ -33,7 +33,7 @@
             </li>
 
             <%}
-                        }
+                }
             %>
         </ul>
     </body>
